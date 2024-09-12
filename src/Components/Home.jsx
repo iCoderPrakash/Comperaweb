@@ -44,7 +44,7 @@ const Home = () => {
     <div className="bg-gray-100 min-h-screen flex items-center justify-center">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         
-        <div className="md:w-1/2 md:text-center text-left px-4 md:px-8">
+        <div className="md:w-1/2 text-center md:text-left px-4 md:px-8">
           <p className="text-sm text-green-600 font-medium mb-2" ref={subtitleRef}>
             ON-DEMAND VIDEO COURSES
           </p>

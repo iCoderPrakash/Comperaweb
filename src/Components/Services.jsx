@@ -11,7 +11,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="text-center py-12 flex justify-center flex-col items-center">
+    <section className="text-center py-12 flex justify-center flex-col items-center w-full">
       <h2 className="text-3xl font-bold text-green-600">Our Services</h2>
       <p className="text-gray-500 mt-4">Consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
 
