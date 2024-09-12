@@ -15,7 +15,7 @@ const HomeAbout = () => {
       </div>
 
     
-      <div className="md:w-1/2 w-full md:text-center text-left md:pl-8">
+      <div className="md:w-1/2 w-full md:text-left text-left md:pl-8">
         <h2 className="text-3xl font-bold mb-4">
           Short Headline for Company About Section Will Be Here
         </h2>

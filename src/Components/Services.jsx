@@ -11,25 +11,36 @@ const Services = () => {
   ];
 
   return (
-    <section className="text-center py-12 flex justify-center flex-col items-center w-full">
+    <section className="container mx-auto px-4 py-12">
+    {/* Heading */}
+    <div className="text-center mb-12">
       <h2 className="text-3xl font-bold text-green-600">Our Services</h2>
-      <p className="text-gray-500 mt-4">Consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+      <p className="text-gray-600">Consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+    </div>
 
-      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 px-4 md:px-0">
-        {services.map((service, index) => (
-          <div key={index} className="flex flex-col items-center w-96 hover:shadow-xl transition-all h-64">
-            <div className="text-5xl  rounded-full p-6">{service.icon}</div>
-            <h3 className="mt-6 text-xl font-semibold">{service.title}</h3>
-            <p className="mt-4 text-gray-500">{service.description}</p>
-          </div>
-        ))}
-      </div>
+    {/* Services Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {services.map((service, index) => (
+        <div 
+          key={index} 
+          className="bg-white text-center p-8 rounded-lg shadow hover:shadow-lg hover:scale-105 transform transition-all duration-300 w-full"
+        >
+          <div className="text-5xl mb-4">{service.icon}</div>
+          <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+          <p className="text-gray-600">{service.description}</p>
+        </div>
+      ))}
+    </div>
 
-      <button className="mt-12 px-8 py-3 border-2 border-green-500 text-green-500 font-semibold rounded-lg hover:bg-green-500 hover:text-white transition">
+    {/* Learn More Button */}
+    <div className="text-center mt-12">
+      <button className="bg-transparent text-green-600 border border-green-600 rounded-lg px-6 py-3 hover:bg-green-600 hover:text-white transition-colors duration-300">
         Learn More
       </button>
-    </section>
-  );
+    </div>
+  </section>
+);
 };
+
 
 export default Services;

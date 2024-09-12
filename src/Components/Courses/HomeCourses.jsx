@@ -1,7 +1,7 @@
 import React from 'react';
 
 import about from '../../images/about.jpg';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const HomeCourses = () => {
   return (
@@ -13,7 +13,7 @@ const HomeCourses = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-3">Start Your Journey of Happiness and Health Today!</h2>
           </div>
           <button className="text-white bg-green-600  px-6 py-2 rounded-md hover:bg-green-700 transition duration-300">
-           <Link to='/courses'> View All Courses</Link>
+           <NavLink to ='/courses'> View All Courses</NavLink>
           </button>
         </div>
 
